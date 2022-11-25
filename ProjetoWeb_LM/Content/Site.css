@@ -1,0 +1,106 @@
+﻿* {
+    font-family: 'Alexandria', sans-serif;
+    margin-left: 0px;
+    padding: 10px;
+    background-color: #1f1f1d;
+}
+
+#cor {
+    color: #3de3ef;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-top: -90px;
+}
+
+    #cor:hover {
+        color: #32c4cf;
+    }
+
+#cor1 {
+    color: #cc70fc;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: -90px;
+}
+
+    #cor1:hover {
+        color: #9451b8;
+    }
+
+#cor2 {
+    color: #a9f86e;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: -90px;
+}
+
+    #cor2:hover {
+        color: #83bf56;
+    }
+
+#1 {
+    margin-top: 30px;
+}
+
+.container {
+    height: 10px;
+}
+
+#imgp {
+    width: 130%;
+}
+
+.container {
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.baixo {
+    color: white;
+}
+
+.form-control text-box single-line {
+    height: 100px;
+}
+
+.field-validation-valid text-danger {
+    margin-top: 10px;
+}
+
+input[type="text"], textarea {
+    background-color: white;
+    width: 50%;
+}
+
+#letras {
+    color: #cc70fc;
+    font-family: 'Alexandria', sans-serif;
+    text-align: left;
+}
+
+#senha {
+    width: 50%;
+}
+
+h4 {
+    color: #3de3ef;
+}
+
+input[type="submit"] {
+    background-color: #a9f86e;
+    margin-left: 0px;
+    color: black;
+    border-radius: 10px;
+}
+
+    input[type="submit"]:hover {
+        background-color: #83bf56;
+    }
+
+.dl-vertical {
+    color: #a9f86e;
+}
+
+#cinza {
+    width: 55%;
+}

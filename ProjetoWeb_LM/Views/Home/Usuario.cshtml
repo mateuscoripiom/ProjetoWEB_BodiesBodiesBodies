@@ -1,0 +1,95 @@
+﻿@model ProjetoWeb_LM.Models.Usuario
+
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+<h2>Cadastro Usuário e palpites</h2>
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <br />
+        <br />
+        <br />
+
+        <h4>Cadastro de Usuários com palpites</h4>
+        <h4>Existe um asassino entre nós. Dê o seu palpite de quem é após se registrar.</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.NomeUsuario, htmlAttributes: new { @class = "control-label col-md-2", @id = "letras" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NomeUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NomeUsuario, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nascimento, htmlAttributes: new { @class = "control-label col-md-2", @id = "letras" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nascimento, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Nascimento, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2", @id = "letras" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Login, htmlAttributes: new { @class = "control-label col-md-2", @id = "letras" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Login, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Senha, htmlAttributes: new { @class = "control-label col-md-2", @id = "letras" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "form-control", @id = "senha" } })
+                @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Confsenha, htmlAttributes: new { @class = "control-label col-md-2", @id = "letras" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Confsenha, new { htmlAttributes = new { @class = "form-control", @id = "senha" } })
+                @Html.ValidationMessageFor(model => model.Confsenha, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Observacao, htmlAttributes: new { @class = "control-label col-md-2", @id = "letras" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Observacao, new { htmlAttributes = new { @class = "form-control", @id = "ultimo" } })
+                @Html.ValidationMessageFor(model => model.Observacao, "", new { @class = "text-danger", @id = "cinza" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Registrar" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Voltar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

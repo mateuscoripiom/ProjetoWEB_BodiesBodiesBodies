@@ -1,0 +1,73 @@
+﻿@model ProjetoWeb_LM.Models.Usuario
+
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Resultado</h2>
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-vertical">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Senha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Senha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Confsenha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Confsenha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Voltar", "Index")
+</p>
